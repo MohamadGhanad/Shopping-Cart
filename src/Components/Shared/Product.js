@@ -22,7 +22,7 @@ const Product = ({productData}) => {
         <div className={styles.container}>
             <img className={styles.cardImage} src={productData.image} alt='product' style={{width: "200px"}} />
             <h3>{productData.title.split(" ").slice(0, 2).join(' ')}</h3>
-            <p>{productData.price}</p>
+            <p>{productData.price} $</p>
             <div className={styles.linkContainer}>
                 <Link to={`/products/${productData.id}`}>details</Link>
                 <div className={styles.buttonContainer}>
